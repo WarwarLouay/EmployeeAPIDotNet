@@ -73,6 +73,7 @@ namespace EmployeeAPI.Controllers
 
             return new UserDto
             {
+                Id = u.Id,
                 UserName = u.UserName,
                 Token = _tokenService.CreateToken(u)
             };

@@ -17,7 +17,7 @@ namespace EmployeeAPI.Controllers
             _context = context;
         }
 
-        [HttpPost("uid")]
+        [HttpPost("{uid}")]
         public async Task<ActionResult<Post>> AddPost(int uid, Post p)
         {
             var po = new Post
